@@ -33,9 +33,19 @@ def init():
     click.echo(json.dumps(data, indent=2))
     click.confirm('Is this ok?', default=True, abort=True)
     
-    # process
+    try:
+        with open(utils.get_file_path(plouffile), 'w') as pf:
+            json.dump(data, pf, indent=4)
+        
+        click.echo(
+            click.style('[SUCESS] ', fg="green") + 'Initialized empty plouf repository.'
+        )
 
-    click.echo('Initialized empty plouf repository.')
+    except Exception:
+        click.echo(
+            click.style('Something went wrong with the creation ', fg="red"),
+            err=True
+        )
 
     pass
 
