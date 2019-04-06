@@ -37,4 +37,7 @@
 ```sh
 $ plouf init
 # project's infos
+
+$ plouf add library
+
 ```
