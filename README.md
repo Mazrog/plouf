@@ -27,6 +27,7 @@ $ eval "$(_PLOUF_COMPLETE=source plouf)"
 
 ## Roadmap, aka dreams (unsorted):
 
+- adding some dependency management, npm-style?
 - user-defined projet types and templates (in a `.plouftemplates` file at the root of directory)
 - user-defined tests frameworks (ie other than just `doctest`)
 - maybe some git linkage?
