@@ -1,43 +1,24 @@
 # Plouf
 
-```json
-{
-    "name": "crypto challenges",
-    "description": "Random project description",
-    "author": "mazrog",
-    "version": "0.1.0",
-
-    "projects": [
-        {
-            "name": "crypt",
-            "parts": [
-                {  }
-            ]
-        }
-    ]
-}
-```
-
-```
-/
-    extern/
-        doctest.h
-    crypt/
-        crypt/
-            include/crypt/
-                crypt.hpp
-            src/
-            CMakeLists.txt
-        tests/
-            main_tests.cpp
-    
-    CMakeLists.txt
-```
-
+Setup
 ```sh
-$ plouf init
-# project's infos
-
-$ plouf add library
-
+$ git clone https://github.com/Mazrog/plouf
+$ pip install --user plouf
 ```
+
+Enbale bash autocompletion
+```sh
+$ eval "$(_PLOUF_COMPLETE=source plouf)"
+```
+
+Start using plouf!
+
+*Do not forget the `--help` flag in case you want some details on the fly*
+
+`plouf`
+
+- `init`: goes through some prompts to initialize the project's repository
+- `add [library|exec]`: for now just know two configurations, used to add such projects
+- `setup`: builds all the folders and creates the startup files with the templates
+    - `-o, --override` [default=`False`] if files already exist, rewrite them
+
