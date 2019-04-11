@@ -4,16 +4,25 @@ Little CLI tools written in python, that lets you manage and organize quicky a f
 
 ## Setup
 
-From sources for now, maybe a pip package soon?
+The script was built using Python3.
 
+### From sources:
+
+Requirements:
+```sh
+$ pip3 install --user --upgrade pip setuptools wheel
+```
+
+Cloning and building:
 ```sh
 $ git clone https://github.com/Mazrog/plouf.git
+$ cd plouf
 
 # Compiling package
-$ python3 setup.py bdist_wheelrunning bdist_wheel
+$ python3 setup.py bdist_wheel
 
 # Actually installing
-$ pip3 install --user plouf/dist/plouf-0.1-py3-none-any.whl
+$ pip3 install --user dist/plouf-0.1-py3-none-any.whl
 ```
 
 *Note: The `--user` parameter is optional, it is just of you want to perform a local installation, without `sudo` permissions*
