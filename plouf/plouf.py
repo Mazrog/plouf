@@ -121,7 +121,7 @@ def init():
     Initialize plouf project for this repository, creating plouffile.
     """
 
-    if not valid_repo():
+    if valid_repo():
         click.confirm('A \"%s\" has been found in this repository, override it?' % plouf_files["config"], abort=True, prompt_suffix='')
 
     data = {

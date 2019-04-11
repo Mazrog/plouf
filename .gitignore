@@ -1,3 +1,5 @@
 .plouffile
 __pycache__
 plouf.egg-info
+build/
+dist/

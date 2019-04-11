@@ -4,12 +4,21 @@ Little CLI tools written in python, that lets you manage and organize quicky a f
 
 ## Setup
 
+From sources for now, maybe a pip package soon?
+
 ```sh
 $ git clone https://github.com/Mazrog/plouf
-$ pip install --user plouf
+
+# Compiling package
+$ python3 setup.py bdist_wheelrunning bdist_wheel
+
+# Actually installing
+$ pip3 install --user plouf/dist/plouf-0.1-py3-none-any.whl
 ```
 
-Enbale bash autocompletion
+*Note: The `--user` parameter is optional, it is just of you want to perform a local installation, without `sudo` permissions*
+
+Enable bash autocompletion (if disabled)
 ```sh
 $ eval "$(_PLOUF_COMPLETE=source plouf)"
 ```
