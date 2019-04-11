@@ -7,7 +7,7 @@ Little CLI tools written in python, that lets you manage and organize quicky a f
 From sources for now, maybe a pip package soon?
 
 ```sh
-$ git clone https://github.com/Mazrog/plouf
+$ git clone https://github.com/Mazrog/plouf.git
 
 # Compiling package
 $ python3 setup.py bdist_wheelrunning bdist_wheel
